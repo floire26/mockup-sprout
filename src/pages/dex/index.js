@@ -22,7 +22,7 @@ export default function Page() {
 
     return (
         <main className="bg-black flex flex-row justify-center">
-            {/* { console.log(placeholder) } */}
+            {/* { console.log(data) } */}
             <div className="nes-container bg-white with-title is-centered is-rounded w-4/5 min-h-screen flex flex-col items-center">
                 <button
                     onClick={() => router.push('/')}
@@ -45,8 +45,8 @@ export default function Page() {
                     <div className="grid grid-cols-3 grid-rows-3 w-full justify-items-center gap-y-4 gap-x-2 mb-5">
                 {
                     isLoading || isValidating ?
-                        placeholder.map(pokemon => <DexCard props={pokemon}/>) :
-                        data.map(pokemon => <DexCard props={pokemon} key={pokemon.order}/>)
+                    placeholder.map(pokemon => <DexCard props={pokemon} key={pokemon.id}/>) :
+                        data.map(pokemon => <DexCard props={pokemon} key={pokemon.id}/>)
                 }
                     </div>
                     <div>

@@ -50,7 +50,7 @@ export default function Page({ params, searchParams }) {
                         {
                             data.stats.slice(0, 3).map(stat => {
                                 stat.name = stat.name[0] === 'h' ? `HP` : stat.name
-                                return <p className='text-6xl capitalize basis-full'>{stat.name}  : { stat.value }</p>
+                                return <p key={stat.name} className='text-6xl capitalize basis-full'>{stat.name}  : { stat.value }</p>
                             })
                         }
                     </div>
@@ -58,7 +58,7 @@ export default function Page({ params, searchParams }) {
                         {
                             data.stats.slice(3).map(stat => {
                                 stat.name = stat.name[3] === 'c' ? `${stat.name.slice(0, 2)}. ${stat.name.slice(7, 11)}.` : stat.name
-                                return <p className='text-6xl capitalize basis-full'>{stat.name}  : { stat.value }</p>
+                                return <p key={stat.name} className='text-6xl capitalize basis-full'>{stat.name}  : { stat.value }</p>
                             })
                         }
                     </div>

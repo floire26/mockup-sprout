@@ -8,6 +8,7 @@ export default function Page() {
       className="bg-pokemon bg-cover flex min-h-screen flex-col items-center justify-between p-20"
       onClick={() => router.push('/dex')}>
       <img
+        alt="Title Logo"
         src={'/images/icon.png'}
         height={600}
         width={600}
