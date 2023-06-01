@@ -45,7 +45,7 @@ export default function Page() {
                     <div className="grid grid-cols-3 grid-rows-3 w-full justify-items-center gap-y-4 gap-x-2 mb-5">
                 {
                     isLoading || isValidating ?
-                    placeholder.map(pokemon => <DexCard props={pokemon} key={pokemon.id}/>) :
+                    placeholder.map(pokemon => <DexCard props={pokemon} key={pokemon.order}/>) :
                         data.map(pokemon => <DexCard props={pokemon} key={pokemon.id}/>)
                 }
                     </div>
