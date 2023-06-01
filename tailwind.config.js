@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'pokemon': "url('/images/start_menu.png')",
+        'pokemon': "url('/images/start.png')",
         'info': "url('/images/back.png')"
       },
       fontFamily: {
